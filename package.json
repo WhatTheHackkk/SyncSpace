@@ -1,0 +1,25 @@
+{
+  "name": "syncspace",
+  "version": "1.0.0",
+  "description": "SyncSpace - Lean, fast, college-exclusive matchmaking platform for hackathons and tech events",
+  "private": true,
+  "scripts": {
+    "server": "npm run start --prefix server",
+    "server:dev": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "client:build": "npm run build --prefix client",
+    "seed": "npm run seed --prefix server"
+  },
+  "keywords": [
+    "hackathon",
+    "matchmaking",
+    "mern",
+    "react",
+    "vite",
+    "mongodb",
+    "express",
+    "tailwind"
+  ],
+  "author": "SyncSpace Team",
+  "license": "MIT"
+}
