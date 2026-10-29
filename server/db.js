@@ -6,7 +6,7 @@ dotenv.config();
 let mongodInstance = null;
 
 export async function connectDB() {
-  const configuredUri = process.env.MONGODB_URI;
+  const configuredUri = process.env.MONGODB_URI || process.env.MONGODB_URL;
 
   // 1. If explicit MONGODB_URI is provided, try connecting to it
   if (configuredUri && !configuredUri.includes('localhost') && !configuredUri.includes('127.0.0.1')) {
